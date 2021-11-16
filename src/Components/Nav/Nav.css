@@ -21,6 +21,10 @@ a {
   margin-left: 1rem;
 }
 
+.navbar__logo img {
+  height: 3rem;
+}
+
 .navbar__links {
   display: flex;
   justify-content: center;
