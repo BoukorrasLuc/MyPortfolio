@@ -27,11 +27,33 @@ a {
 
 .navbar__links {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  width: 30rem;
 }
+
+.navbar__item {
+  display: inline-block;
+}
+
 .navbar__link {
-  padding: 0 0.3rem;
+  font-size: 1.5rem;
   color: inherit;
+}
+
+.navbar__link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: width 0.3s;
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar__link:hover::after {
+  width: 100%;
+  transition: width 1s;
 }
 
 .navbar__burger {

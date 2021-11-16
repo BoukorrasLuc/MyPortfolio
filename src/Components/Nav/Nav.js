@@ -26,17 +26,17 @@ function Nav() {
           </a>
         </li>
         <li className="navbar__item slideInDown-2">
-          <a href="/a-propos" className="navbar__link">
+          <a href="/Apropos" className="navbar__link">
             A propos
           </a>
         </li>
         <li className="navbar__item slideInDown-3">
-          <a href="/portfolio" className="navbar__link">
+          <a href="/Portfolio" className="navbar__link">
             Portfolio
           </a>
         </li>
         <li className="navbar__item slideInDown-4">
-          <a href="/contact" className="navbar__link">
+          <a href="/Contact" className="navbar__link">
             Contact
           </a>
         </li>
