@@ -1,76 +1,16 @@
 header {
   background-color: #000000;
   height: 10vh;
-  // width: 100%;
+}
 
-  // // font-size: calc(5px + 1vmax);
-  // color: white;
-  // // font-family: "poppins";
-  // display: flex;
-  // align-items: center;
-  // justify-content: flex-end;
-  // border-bottom: 1px solid #fff;
-  // box-sizing: border-box;
+@media (min-width: 768px) and (max-width: 1024px) {
+  header {
+    height: 5vh;
+  }
+}
 
-  // .btn {
-  //   line-height: 50px;
-  //   max-height: 50%;
-  //   text-align: center;
-  //   width: 150px;
-  //   cursor: pointer;
-  //   margin: 1%;
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-  //   flex-direction: row;
-  // }
-
-  // .btn-one {
-  //   color: #fff;
-  //   transition: all 0.3s;
-  //   position: relative;
-  // }
-  // .btn-one span {
-  //   transition: all 0.3s;
-  // }
-  // .btn-one::before {
-  //   content: "";
-  //   position: absolute;
-  //   bottom: 0;
-  //   left: 0;
-  //   width: 100%;
-  //   height: 100%;
-  //   z-index: 1;
-  //   opacity: 0;
-  //   transition: all 0.3s;
-  //   border-top-width: 1px;
-  //   border-bottom-width: 1px;
-  //   border-top-style: solid;
-  //   border-bottom-style: solid;
-  //   border-top-color: rgb(255, 255, 255);
-  //   border-bottom-color: rgb(255, 255, 255);
-  //   transform: scale(0.1, 1);
-  // }
-  // .btn-one:hover span {
-  //   letter-spacing: 2px;
-  // }
-  // .btn-one:hover::before {
-  //   opacity: 1;
-  //   transform: scale(1, 1);
-  // }
-  // .btn-one::after {
-  //   content: "";
-  //   position: absolute;
-  //   bottom: 0;
-  //   left: 0;
-  //   width: 100%;
-  //   height: 100%;
-  //   z-index: 1;
-  //   transition: all 0.3s;
-  //   background-color: rgba(255, 255, 255, 0.1);
-  // }
-  // .btn-one:hover::after {
-  //   opacity: 0;
-  //   transform: scale(0.1, 1);
-  // }
+@media (max-width: 768px) {
+  header {
+    height: 5vh;
+  }
 }

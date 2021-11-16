@@ -19,7 +19,7 @@
     .contentSpanOn {
       background: #010101;
       width: 50vw;
-      height: 90vh;
+      height: 100vh;
       img {
         height: 100%;
         width: 90%;
@@ -32,7 +32,7 @@
     .contentSpanTwo {
       background: #ffffff;
       width: 50vw;
-      height: 90vh;
+      height: 100vh;
       z-index: 1;
 
       .contentEffectRound {
@@ -90,6 +90,19 @@
             }
           }
         }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hero {
+    .content {
+      .contentSpanOn {
+        height: 65vh;
+      }
+      .contentSpanTwo {
+        height: 65vh;
       }
     }
   }

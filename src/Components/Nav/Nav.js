@@ -25,6 +25,7 @@ function Nav() {
             Accueil
           </a>
         </li>
+
         <li className="navbar__item slideInDown-2">
           <a href="/Apropos" className="navbar__link">
             A propos
