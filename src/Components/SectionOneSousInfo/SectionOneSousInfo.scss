@@ -1,0 +1,19 @@
+.sectionOneSousInfo1,
+.sectionOneSousInfo2 {
+  font-size: calc(1px + 1.2vmin);
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin-bottom: 1%;
+}
+
+.sectionOneSousInfo3,
+.sectionOneSousInfo4,
+.sectionOneSousInfo5 {
+  font-size: calc(1px + 1.2vmin);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  margin-bottom: 1%;
+}

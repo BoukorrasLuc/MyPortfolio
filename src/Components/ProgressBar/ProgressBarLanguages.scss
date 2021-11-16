@@ -1,0 +1,85 @@
+.languages {
+  height: 100%;
+  margin: 5px 0 0 10px;
+
+  h3 {
+    color: Black;
+    text-transform: uppercase;
+    font-size: calc(4px + 1vmin);
+  }
+}
+
+.yearsLanguages {
+  display: flex;
+  justify-content: space-between;
+  color: black;
+
+  span {
+    width: 36%;
+    font-size: calc(1px + 1vmin);
+
+    &:nth-child(2) {
+      text-align: center;
+      width: 30%;
+    }
+
+    &:nth-child(3) {
+      text-align: center;
+      width: 44%;
+    }
+
+    // &:nth-child(2)::before,
+    // &:nth-child(3)::before {
+    //   content: "";
+    //   background-color: #000000;
+    //   position: absolute;
+    //   height: 0;
+    //   animation: lines 2s ease-out forwards;
+
+    //   @keyframes lines {
+    //     to {
+    //       margin-top: calc(-5px - 0.1vmax);
+    //       height: calc(5px + 5vmin);
+    //     }
+    //   }
+    //   width: 2px;
+    //   border-radius: 50%;
+    //   transform: translate(9px, 20px);
+    // }
+  }
+}
+
+.languagesList {
+  padding-top: 1%;
+
+  height: calc(5px + 2vmin);
+
+  li {
+    color: #353a44;
+    font-size: calc(1px + 1vmin);
+  }
+
+  .progressBar {
+    height: 2px;
+    background: transparent;
+    border-radius: 50px;
+    margin-top: 3px;
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      background: #000000;
+      border-radius: 50px;
+      height: 2px;
+      width: 0;
+      animation: line 10s ease-out forwards;
+
+      @keyframes line {
+        to {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
