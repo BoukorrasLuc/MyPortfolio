@@ -24,6 +24,7 @@
     .sectionOneTitle {
       font-size: calc(15px + 1vmin);
       margin-bottom: 2%;
+      margin-top: 10px;
       text-decoration: underline;
     }
     .sectionOneLocalisation {
@@ -60,6 +61,12 @@
       .sectionOneText {
         font-size: calc(1vmax);
         margin-bottom: 5%;
+      }
+    }
+
+    @media (width: 1024px) and (height: 1366px) {
+      .sectionOneText {
+        font-size: 20px;
       }
     }
     @media screen and (max-width: 768px) and (min-width: 540px) {
@@ -143,7 +150,7 @@
     text-align: center;
     @media screen and (max-width: 1280px) and (min-width: 768px) {
       img {
-        min-height: calc(15px + 1vmin);
+        min-height: calc(13px + 1vmin);
       }
     }
     @media screen and (max-width: 540px) and (min-width: 280px) {
