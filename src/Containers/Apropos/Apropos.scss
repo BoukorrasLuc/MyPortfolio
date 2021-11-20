@@ -1,0 +1,158 @@
+.App-sectionOne {
+  background-color: #010101;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "poppins";
+  color: white;
+
+  .sectionOneLeft {
+    display: flex;
+    img {
+      height: 40vh;
+      object-fit: cover;
+      max-width: 50vw;
+    }
+  }
+  .sectionOneRight {
+    height: 40vh;
+    width: 40vw;
+    margin-left: 5%;
+    background-color: yellowgreen;
+
+    .sectionOneTitle {
+      font-size: calc(15px + 1vmin);
+      margin-bottom: 2%;
+      text-decoration: underline;
+    }
+    .sectionOneLocalisation {
+      font-size: calc(5px + 1vmin);
+      margin-bottom: 2%;
+    }
+    .sectionOneText {
+      font-size: calc(7px + 0.5vmin);
+      margin-bottom: 2%;
+      background-color: rgb(41, 116, 100);
+    }
+
+    @media screen and (max-width: 1280px) and (min-width: 1024px) {
+      .sectionOneTitle {
+        font-size: 20px;
+      }
+      .sectionOneLocalisation {
+        font-size: 14px;
+      }
+      .sectionOneText {
+        font-size: calc(0.5px + 1vmax);
+      }
+    }
+
+    @media screen and (max-width: 1024px) and (min-width: 768px) {
+      .sectionOneTitle {
+        font-size: 20px;
+        margin-bottom: 5%;
+      }
+      .sectionOneLocalisation {
+        font-size: 14px;
+        margin-bottom: 5%;
+      }
+      .sectionOneText {
+        font-size: calc(1vmax);
+        margin-bottom: 5%;
+      }
+    }
+    @media screen and (max-width: 768px) and (min-width: 540px) {
+      .sectionOneTitle {
+        font-size: 15px;
+        margin-bottom: 6%;
+      }
+      .sectionOneLocalisation {
+        font-size: 12px;
+        margin-bottom: 6%;
+      }
+      .sectionOneText {
+        font-size: calc(2px + 1.1vmax);
+        margin-bottom: 6%;
+      }
+    }
+    @media screen and (max-width: 540px) and (min-width: 280px) {
+      .sectionOneTitle {
+        font-size: 10px;
+        margin-bottom: 5%;
+      }
+      .sectionOneLocalisation {
+        font-size: 8px;
+        margin-bottom: 5%;
+      }
+      .sectionOneText {
+        font-size: calc(1.5px + 1vmax);
+        margin-bottom: 5%;
+      }
+    }
+  }
+  .sectionOneInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 540px) and (min-width: 280px) {
+  .App-sectionTwo {
+    max-height: 40vh;
+  }
+}
+
+.App-sectionTwo {
+  background-color: white;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: calc(5px + 2vmin);
+  font-family: "poppins";
+  color: rgb(0, 0, 0);
+
+  .sectionTwoLeft {
+    width: 40vw;
+    .sectionTwoLeftCitation {
+      min-width: 100%;
+    }
+    .sectionTwoLeftCitationName {
+      margin-left: 50%;
+      margin-top: 2%;
+      font-size: 70%;
+    }
+  }
+  .sectionTwoRight {
+    width: 40vw;
+    border: solid 3px #282c34;
+
+    .languagesFrameworks {
+      margin-bottom: 10px;
+    }
+  }
+}
+.sectionTwoBottomLogo {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5px;
+  div {
+    text-align: center;
+    @media screen and (max-width: 1280px) and (min-width: 768px) {
+      img {
+        min-height: calc(15px + 1vmin);
+      }
+    }
+    @media screen and (max-width: 540px) and (min-width: 280px) {
+      img {
+        min-height: calc(8px + 1vmin);
+      }
+    }
+    img {
+      height: calc(5px + 1.5vmin);
+    }
+  }
+}

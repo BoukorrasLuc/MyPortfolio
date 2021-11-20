@@ -6,7 +6,7 @@ import sendEmail from "../../Function/sendEmail";
 
 const Contact = () => {
   return (
-    <section className="App-sectionFour">
+    <section className="App-Contact">
       <div className="title">Travaillons ensemble ?</div>
 
       <div className="section-content">

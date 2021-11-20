@@ -1,7 +1,7 @@
 // Scss
 import "./Hero.scss";
 
-const Hero = ({ Luc, handleScroll, faArrowAltCircleDown, FontAwesomeIcon }) => {
+const Hero = ({ Luc }) => {
   return (
     <div className="hero">
       <div className="content">

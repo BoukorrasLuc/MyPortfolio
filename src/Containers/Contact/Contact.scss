@@ -1,4 +1,4 @@
-.App-sectionFour {
+.App-Contact {
   background-color: #ffffff;
   min-height: calc(100vh - 10vh);
   display: flex;
@@ -68,7 +68,7 @@
           max-height: 30%;
           text-align: center;
           width: 140px;
-          // cursor: pointer;
+          cursor: pointer;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -136,6 +136,7 @@
           z-index: 1;
           opacity: 1;
           color: white;
+          cursor: pointer;
         }
       }
     }
@@ -202,6 +203,7 @@
       }
       .btn-one a {
         transition: all 0.3s;
+        z-index: 2;
       }
       .btn-one::before {
         content: "";
@@ -252,42 +254,32 @@
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  .App-sectionFour {
-    // border: solid 1px green;
-    // background: chartreuse;
-    min-height: 882px;
-    .title {
-      margin-bottom: 25px;
-      margin-top: 25px;
-    }
+  .App-Contact {
     .section-content {
       .sectionFourLeft {
-        height: 50vh;
+        height: 60vh;
         .title {
-          //   border: solid 1px green;
-          font-size: 1rem;
+          font-size: 1.5rem;
         }
         .contact-form {
-          height: 90%;
-          //   border: solid 1px green;
+          height: 450px;
         }
       }
       .sectionFourRight {
-        height: 50vh;
+        height: 60vh;
       }
     }
   }
 }
 
 @media (max-width: 767px) {
-  .App-sectionFour {
+  .App-Contact {
     .section-content {
       flex-direction: column;
       .sectionFourLeft {
         width: 80vw;
         height: 75vh;
         .title {
-          //   border: solid 1px green;
           font-size: 1.5rem;
         }
         .contact-form {

@@ -20,8 +20,8 @@ const Logo = () => {
         src="https://res.cloudinary.com/dgu3expdz/image/upload/v1631209792/Svg/Html_vu9pzw.svg"
         alt="Logo Html"
       />
-      <br />
-      <br />
+      {/* <br />
+      <br /> */}
       &ensp;
       <img
         src="https://res.cloudinary.com/dgu3expdz/image/upload/v1631209794/Svg/Yarn_gbjudg.svg"
@@ -48,8 +48,8 @@ const Logo = () => {
         alt="Logo Heroku"
       />
       &ensp;
-      <br />
-      <br />
+      {/* <br />
+      <br /> */}
       <img
         src="https://res.cloudinary.com/dgu3expdz/image/upload/v1631218573/Svg/Netlify_akakgo.svg"
         alt="Logo Netlify"
@@ -70,8 +70,8 @@ const Logo = () => {
         alt="Logo mongodb"
       />
       &ensp;
-      <br />
-      <br />
+      {/* <br />
+      <br /> */}
       <img
         src="https://res.cloudinary.com/dgu3expdz/image/upload/v1631209792/Svg/Sass_m8gxei.svg"
         alt="Logo Sass"
