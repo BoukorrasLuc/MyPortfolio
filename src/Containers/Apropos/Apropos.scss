@@ -15,11 +15,11 @@
       max-width: 50vw;
     }
   }
+
   .sectionOneRight {
     height: 40vh;
     width: 40vw;
     margin-left: 5%;
-    background-color: yellowgreen;
 
     .sectionOneTitle {
       font-size: calc(15px + 1vmin);
@@ -34,7 +34,6 @@
     .sectionOneText {
       font-size: calc(7px + 0.5vmin);
       margin-bottom: 2%;
-      background-color: rgb(41, 116, 100);
     }
 
     @media screen and (max-width: 1280px) and (min-width: 1024px) {
@@ -46,6 +45,12 @@
       }
       .sectionOneText {
         font-size: calc(0.5px + 1vmax);
+      }
+    }
+
+    @media (width: 1280px) and (height: 800px) {
+      .sectionOneText {
+        font-size: 17px;
       }
     }
 
@@ -66,7 +71,7 @@
 
     @media (width: 1024px) and (height: 1366px) {
       .sectionOneText {
-        font-size: 20px;
+        font-size: 20.5px;
       }
     }
     @media screen and (max-width: 768px) and (min-width: 540px) {
@@ -83,6 +88,12 @@
         margin-bottom: 6%;
       }
     }
+    @media (width: 768px) and (height: 1024px) {
+      .sectionOneText {
+        font-size: 15.5px;
+      }
+    }
+
     @media screen and (max-width: 540px) and (min-width: 280px) {
       .sectionOneTitle {
         font-size: 10px;
@@ -95,6 +106,41 @@
       .sectionOneText {
         font-size: calc(1.5px + 1vmax);
         margin-bottom: 5%;
+      }
+    }
+    @media (width: 540px) and (height: 720px) {
+      .sectionOneText {
+        font-size: 11px;
+      }
+    }
+    @media (width: 414px) and (height: 736px) {
+      .sectionOneText {
+        font-size: 10.3px;
+      }
+    }
+    @media (width: 411px) and (height: 731px) {
+      .sectionOneText {
+        font-size: 10.4px;
+      }
+    }
+    @media (width: 411px) and (height: 823px) {
+      .sectionOneText {
+        font-size: 11.1px;
+      }
+    }
+    @media (width: 375px) and (height: 667px) {
+      .sectionOneText {
+        font-size: 9.2px;
+      }
+    }
+    @media (width: 375px) and (height: 812px) {
+      .sectionOneText {
+        font-size: 10.5px;
+      }
+    }
+    @media (width: 360px) and (height: 640px) {
+      .sectionOneText {
+        font-size: 8.7px;
       }
     }
   }
