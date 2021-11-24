@@ -1,19 +1,18 @@
 .App-sectionThree {
   background-color: #000000;
-  min-height: calc(100vh);
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(0.625rem + 2vmin);
   font-family: "poppins";
   color: rgb(0, 0, 0);
-  //   border-top: #000000 2px solid;
 
   .sectionThreetitle {
     color: rgb(255, 255, 255);
-    margin: 25px 0;
-    font-size: calc(15px + 2vmin);
+    margin: 1.56rem 0;
+    font-size: calc(1rem + 2vmin);
     text-decoration: underline;
   }
   .App-projet {

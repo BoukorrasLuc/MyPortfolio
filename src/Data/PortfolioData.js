@@ -16,7 +16,7 @@ export const PortfolioData = [
     languagesIcons: ["fab fa-js", "fab fa-react", "fab fa-css3-alt"],
     source: "https://github.com/BoukorrasLuc/Deliveroo-Frontend-React",
     netlify: "https://deliveroo-luc.netlify.app/",
-    info: "Réalisation d'une page Deliveroo avec un panier fonctionnel: vous pouvez ajouter des articles et le total sera mis à jour dynamiquement.",
+    info: "Réalisation d'une page Deliveroo avec un panier fonctionnel, vous pouvez ajouter des articles et le total sera mis à jour dynamiquement.",
     picture: "./media/Deliveroo.PNG",
   },
   {

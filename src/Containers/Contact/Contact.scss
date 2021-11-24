@@ -8,11 +8,10 @@
   color: rgb(0, 0, 0);
 
   .title {
-    font-size: calc(15px + 2vmin);
+    font-size: calc(0.93rem + 2vmin);
     font-family: "poppins";
     text-decoration: underline;
-    margin-bottom: 50px;
-    margin-top: 50px;
+    margin: 3.125rem 0;
   }
   .section-content {
     display: flex;
@@ -32,11 +31,11 @@
 
       border-right: white 1px solid;
       color: white;
-      font-size: calc(10px + 0.5vmin);
+      font-size: calc(0.625rem + 0.5vmin);
       .title {
-        font-size: calc(5px + 1.5vmin);
+        font-size: calc(0.3125rem + 1.5vmin);
         text-decoration: none;
-        margin-top: 25px;
+        margin-top: 1.56rem;
       }
       .contact-form {
         display: flex;
@@ -45,29 +44,29 @@
         justify-content: center;
         height: 100%;
         width: 20vw;
-        margin-top: -50px;
+        margin-top: -3.125rem;
         text-align: center;
         input {
-          margin-top: 5px;
-          margin-bottom: 5px;
+          margin: 0.3125rem 0;
+
           width: 100%;
           text-align: center;
         }
         label {
-          margin-top: 5px;
+          margin-top: 0.3125rem;
         }
         textarea {
-          margin-top: 5px;
-          height: 150px;
+          margin-top: 0.3125rem;
+          height: 9.375rem;
           width: 100%;
           resize: none;
         }
         .btn {
-          margin-top: 10px;
-          line-height: 50px;
+          margin-top: 0.625rem;
+          line-height: 3.125rem;
           max-height: 30%;
           text-align: center;
-          width: 140px;
+          width: 8.75rem;
           cursor: pointer;
           display: flex;
           justify-content: center;
@@ -82,7 +81,7 @@
         }
         .btn-one input {
           transition: all 0.3s;
-          font-size: 0.8rem;
+          font-size: 12px;
         }
         .btn-one::before {
           content: "";
@@ -103,7 +102,7 @@
           transform: scale(0.1, 1);
         }
         .btn-one:hover input {
-          letter-spacing: 2px;
+          letter-spacing: 0.125rem;
         }
         .btn-one:hover::before {
           opacity: 1;
@@ -131,8 +130,8 @@
         }
         .button-send {
           position: relative;
-          width: calc(70px + 7.2vmin);
-          height: 30px;
+          width: calc(4.375rem + 7.2vmin);
+          height: 1.875rem;
           z-index: 1;
           opacity: 1;
           color: white;
@@ -153,11 +152,11 @@
       text-align: center;
       div {
         width: 100%;
-        margin: 5px 0;
+        margin: 0.3125rem 0;
         font-size: calc(10px + 0.5vmin);
 
         &:nth-child(1) {
-          font-size: calc(5px + 2vmin);
+          font-size: calc(0.3125rem + 2vmin);
         }
         &:nth-child(2) {
           color: rgb(77, 77, 77);
@@ -174,7 +173,7 @@
           display: flex;
           justify-content: space-around;
           align-items: center;
-          width: calc(10px + 25vmin);
+          width: calc(0.625rem + 25vmin);
         }
       }
       .socialNetwork {
@@ -184,10 +183,10 @@
         }
       }
       .btn {
-        line-height: 50px;
+        line-height: 3.125rem;
         max-height: 30%;
         text-align: center;
-        width: 150px;
+        width: 9.375rem;
         cursor: pointer;
         margin: 1%;
         display: flex;
@@ -224,7 +223,7 @@
         transform: scale(0.1, 1);
       }
       .btn-one:hover a {
-        letter-spacing: 2px;
+        letter-spacing: 0.125rem;
       }
       .btn-one:hover::before {
         opacity: 1;
@@ -260,10 +259,10 @@
       .sectionFourLeft {
         height: 75vh;
         .title {
-          font-size: 1.5rem;
+          font-size: 1.125rem;
         }
         .contact-form {
-          height: 450px;
+          height: 28.125rem;
         }
       }
       .sectionFourRight {
@@ -272,16 +271,30 @@
     }
   }
 }
+
+@media (width: 1024px) and (height: 1366px) {
+  .App-Contact {
+    .section-content {
+      .sectionFourLeft {
+        height: 50vh;
+      }
+      .sectionFourRight {
+        height: 50vh;
+      }
+    }
+  }
+}
+
 @media (width: 768px) and (height: 1024px) {
   .App-Contact {
     .section-content {
       .sectionFourLeft {
         height: 65vh;
         .title {
-          font-size: 1.5rem;
+          font-size: 1.125rem;
         }
         .contact-form {
-          height: 450px;
+          height: 28.128rem;
         }
       }
       .sectionFourRight {
@@ -299,7 +312,7 @@
         width: 80vw;
         height: 75vh;
         .title {
-          font-size: 1.5rem;
+          font-size: 1.125rem;
         }
         .contact-form {
           height: 60%;
@@ -307,7 +320,7 @@
           margin-top: 0;
 
           .btn {
-            width: 120px;
+            width: 7.5rem;
           }
           .btn-one:hover input {
             letter-spacing: 0;
@@ -318,7 +331,7 @@
         width: 80vw;
         height: 40vh;
         .btn {
-          width: 120px;
+          width: 7.5rem;
         }
       }
     }

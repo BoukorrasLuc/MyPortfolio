@@ -26,7 +26,7 @@ a {
 .navbar__links {
   display: flex;
   justify-content: space-between;
-  width: 30rem;
+  width: 31rem;
 }
 
 .navbar__item {
@@ -42,7 +42,7 @@ a {
   content: "";
   display: block;
   width: 0;
-  height: 2px;
+  height: 0.125rem;
   background: #fff;
   transition: width 0.3s;
   text-decoration: none;
@@ -55,8 +55,8 @@ a {
 }
 
 .navbar__burger {
-  width: 30px;
-  height: 30px;
+  width: 1.87rem;
+  height: 1.87rem;
   background: transparent;
   border: none;
   color: inherit;
@@ -98,14 +98,14 @@ a {
   }
   .navbar__link {
     display: block;
-    padding: 1.5rem;
+    padding: 2rem;
     font-size: 5vw;
   }
   .navbar__burger {
     display: block;
     position: fixed;
-    top: 1rem;
-    right: 1rem;
+    top: 17px;
+    right: 17px;
   }
   .navbar__burger:hover {
     cursor: pointer;
@@ -115,7 +115,7 @@ a {
   .burger-bar::before,
   .burger-bar::after {
     display: block;
-    width: 30px;
+    width: 1.87rem;
     height: 3px;
     position: relative;
     border-radius: 3px;
@@ -129,11 +129,11 @@ a {
     left: 0;
   }
   .burger-bar::before {
-    transform: translateY(-12px);
+    transform: translateY(-0.75rem);
   }
 
   .burger-bar::after {
-    transform: translateY(12px);
+    transform: translateY(0.75rem);
   }
 
   .show-nav .burger-bar {
