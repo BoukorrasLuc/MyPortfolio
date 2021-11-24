@@ -1,6 +1,6 @@
 .App-Contact {
   background-color: #ffffff;
-  min-height: calc(100vh - 10vh);
+  min-height: calc(100vh - 15vh);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,7 +26,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      height: 60vh;
+      height: 68vh;
       width: 35vw;
       background-color: black;
 
@@ -143,7 +143,7 @@
     .sectionFourRight {
       background-color: rgb(0, 0, 0);
       border: solid 1px rgb(255, 255, 255);
-      height: 60vh;
+      height: 68vh;
       width: 35vw;
       display: flex;
       justify-content: center;
@@ -253,11 +253,12 @@
     }
   }
 }
+
 @media (min-width: 768px) and (max-width: 1024px) {
   .App-Contact {
     .section-content {
       .sectionFourLeft {
-        height: 60vh;
+        height: 75vh;
         .title {
           font-size: 1.5rem;
         }
@@ -266,7 +267,25 @@
         }
       }
       .sectionFourRight {
-        height: 60vh;
+        height: 75vh;
+      }
+    }
+  }
+}
+@media (width: 768px) and (height: 1024px) {
+  .App-Contact {
+    .section-content {
+      .sectionFourLeft {
+        height: 65vh;
+        .title {
+          font-size: 1.5rem;
+        }
+        .contact-form {
+          height: 450px;
+        }
+      }
+      .sectionFourRight {
+        height: 65vh;
       }
     }
   }

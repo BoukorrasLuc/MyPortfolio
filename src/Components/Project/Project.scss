@@ -1,6 +1,6 @@
 .project {
-  height: 350px;
-  width: 350px;
+  height: 250px;
+  width: 250px;
   margin: 10px;
 
   section {
@@ -19,21 +19,15 @@
         transform-origin: right;
       }
     }
-    .container {
-      padding-top: 20px;
-      padding-bottom: 20px;
-    }
+
     body {
       background-color: #111845;
     }
     .background-img {
       background-repeat: no-repeat;
       background-size: cover;
-      margin: 5% auto;
-      padding: 20px;
-
+      margin: 0% auto;
       border-radius: 4px;
-
       position: relative;
     }
     .content {
@@ -52,10 +46,11 @@
         font-size: 19px;
       }
     }
+
     .box {
       position: absolute;
-      width: 300px;
-      height: 300px;
+      width: 250px;
+      height: 250px;
       background: #000000;
       box-sizing: border-box;
       overflow: hidden;
@@ -126,29 +121,66 @@
     }
   }
 }
-
 .Overlay {
-  position: absolute;
-  backdrop-filter: blur(2px);
-  top: 270%;
-  bottom: 0;
-  right: 0;
+  position: fixed;
+  top: 0;
   left: 0;
-  z-index: 10;
+  right: 0;
+  bottom: 0;
+  background-color: transparent;
 }
-.Modal {
-  // top: 50%;
-  // left: 50%;
-  // right: auto;
-  // bottom: auto;
-  // margin-right: -50%;
-  // transform: translate(50%, 50%);
-  width: 50%;
-  max-width: 350px;
 
-  background-color: #fff;
+.Modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+
+  width: 250px;
+
+  background-color: rgb(255, 255, 255);
+  border: solid 2px black;
   border-radius: 10px;
+
+  font-family: "poppins";
+
   .showInfos {
-    color: red;
+    .infosContent {
+      .head {
+        display: flex;
+        justify-content: space-around;
+        margin: 5px 0;
+        font-family: "poppins";
+        h2 {
+        }
+        .sourceCode {
+        }
+        .netlify {
+          .button {
+          }
+        }
+      }
+      .text {
+        margin-top: 10px;
+      }
+      .buttonReturn {
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) and (min-width: 767px) {
+  .project {
+    height: 350px;
+    width: 350px;
+    section {
+      .box {
+        height: 350px;
+        width: 350px;
+      }
+    }
+  }
+  .Modal {
+    width: 350px;
   }
 }

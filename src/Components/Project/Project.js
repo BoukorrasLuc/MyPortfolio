@@ -6,29 +6,6 @@ import Modal from "react-modal";
 import React from "react";
 
 const Project = ({ item }) => {
-  // const customStyles = {
-  //   content: {
-  //     top: "50%",
-  //     left: "50%",
-  //     right: "auto",
-  //     bottom: "auto",
-  //     marginRight: "-50%",
-  //     transform: "translate(-50%, -200%)",
-  //     maxWidth: "350px",
-  //     backgroundColor: "#fff",
-  //     borderRadius: "10px",
-
-  //     fontFamily: "poppins",
-  //     boxShadow: "0 10px 10px #000000",
-  //   },
-  //   overlay: {
-  //     backgroundSize: "100%",
-  //     backgroundRepeat: "no-repeat",
-  //     backgroundPosition: "center",
-  //     zIndex: "10",
-  //   },
-  // };
-
   const [modalIsOpen, setIsOpen] = React.useState(false);
   function openModal() {
     setIsOpen(true);
@@ -61,7 +38,6 @@ const Project = ({ item }) => {
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
-        // style={customStyles}
         contentLabel="Projet Modal"
         ariaHideApp={false}
         className="Modal"
@@ -69,17 +45,9 @@ const Project = ({ item }) => {
       >
         <div className="showInfos">
           <div className="infosContent">
-            <div
-              className="head"
-              style={{
-                display: "flex",
-                justifyContent: "space-around",
-                margin: "5px 0",
-                fontFamily: "poppins",
-              }}
-            >
+            <div className="head">
               <h2>{item.name}</h2>&ensp;
-              <div>
+              <div className="sourceCode">
                 <a
                   href={item.source}
                   className="button"
@@ -91,7 +59,7 @@ const Project = ({ item }) => {
                 &ensp;
               </div>
               {item.netlify === null ? (
-                <div>
+                <div className="netlify">
                   <a
                     href={item.netlify}
                     className="button"
@@ -102,7 +70,7 @@ const Project = ({ item }) => {
                   </a>
                 </div>
               ) : (
-                <div>
+                <div className="netlify">
                   <a
                     href={item.netlify}
                     className="button"
@@ -114,10 +82,8 @@ const Project = ({ item }) => {
                 </div>
               )}
             </div>
-            <p className="text" style={{ marginTop: "15px" }}>
-              {item.info}
-            </p>
-            <div className="button return" onClick={closeModal}>
+            <p className="text">{item.info}</p>
+            <div className="buttonReturn" onClick={closeModal}>
               Retourner sur la page
             </div>
           </div>
