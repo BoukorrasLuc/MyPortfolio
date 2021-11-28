@@ -57,6 +57,11 @@ const Logo = () => {
       />
       &ensp;
       <img
+        src="https://res.cloudinary.com/dgu3expdz/image/upload/v1638102367/Svg/Firebase_w21zgh_luv9jt.svg"
+        alt="Logo Firebase"
+      />
+      &ensp;
+      <img
         src="https://res.cloudinary.com/dgu3expdz/image/upload/v1631218573/Svg/Expo_rldgyw.svg"
         alt="Logo Expo"
       />

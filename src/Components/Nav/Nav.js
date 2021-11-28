@@ -1,11 +1,8 @@
 // CSS
-import "./Nav.css";
+import "./Nav.scss";
 
 // Packages
 import { useState } from "react";
-
-// Images
-import Logo from "../../Asset/Image/Logo-Boukorras Luc.png";
 
 function Nav() {
   const [showLinks, setShowLinks] = useState(false);
@@ -16,9 +13,6 @@ function Nav() {
 
   return (
     <nav className={`navbar ${showLinks ? "show-nav" : "hide-nav"} `}>
-      <div className="navbar__logo">
-        <img src={Logo} alt="Logo Boukorras Luc" />
-      </div>
       <ul className="navbar__links">
         <li className="navbar__item slideInDown-1">
           <a href="/" className="navbar__link">

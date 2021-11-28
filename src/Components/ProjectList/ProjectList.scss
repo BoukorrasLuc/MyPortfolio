@@ -6,3 +6,11 @@
     flex-wrap: wrap;
   }
 }
+
+@media screen and (min-width: 767px) {
+  .projectListContent {
+    .projects {
+      max-width: 800px;
+    }
+  }
+}

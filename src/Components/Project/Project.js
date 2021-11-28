@@ -45,7 +45,7 @@ const Project = ({ item }) => {
       >
         <div className="showInfos">
           <div className="infosContent">
-            <div className="head">
+            <div className="infosTop">
               <h2>{item.name}</h2>&ensp;
               <div className="sourceCode">
                 <a
@@ -54,12 +54,12 @@ const Project = ({ item }) => {
                   rel="noreferrer"
                   target="_blank"
                 >
-                  Code source
+                  Github
                 </a>
                 &ensp;
               </div>
               {item.netlify === null ? (
-                <div className="netlify">
+                <div className="NoNetlify">
                   <a
                     href={item.netlify}
                     className="button"
@@ -82,7 +82,15 @@ const Project = ({ item }) => {
                 </div>
               )}
             </div>
+
+            <div className="containerLanguages">
+              {item.languagesImg.map((img, index) => {
+                return <img key={index} src={img} alt="" />;
+              })}
+            </div>
+
             <p className="text">{item.info}</p>
+
             <div className="buttonReturn" onClick={closeModal}>
               Retourner sur la page
             </div>

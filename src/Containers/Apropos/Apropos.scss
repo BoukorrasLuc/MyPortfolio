@@ -1,6 +1,6 @@
 .App-sectionOne {
   background-color: #010101;
-  height: 40vh;
+  height: calc(40vh);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -24,7 +24,7 @@
     .sectionOneTitle {
       font-size: calc(1rem + 1vmin);
       margin-bottom: 2%;
-      margin-top: 10px;
+      margin-top: 0.625rem;
       text-decoration: underline;
     }
     .sectionOneLocalisation {
@@ -34,6 +34,17 @@
     .sectionOneText {
       font-size: calc(7px + 0.5vmin);
       margin-bottom: 2%;
+    }
+
+    @media screen and (min-width: 1280px) {
+      .sectionOneLocalisation {
+        font-size: 0.87rem;
+        margin-bottom: 5%;
+      }
+      .sectionOneText {
+        font-size: 1vmax;
+        margin-bottom: 5%;
+      }
     }
 
     @media screen and (max-width: 1280px) and (min-width: 1024px) {
@@ -50,7 +61,7 @@
 
     @media (width: 1280px) and (height: 800px) {
       .sectionOneText {
-        font-size: 1rem;
+        font-size: 0.95rem;
       }
     }
 
@@ -143,6 +154,11 @@
         font-size: 0.54rem;
       }
     }
+    @media (width: 320px) and (height: 568px) {
+      .sectionOneText {
+        font-size: 0.49rem;
+      }
+    }
   }
   .sectionOneInfo {
     display: flex;
@@ -154,13 +170,19 @@
 
 @media screen and (max-width: 540px) and (min-width: 280px) {
   .App-sectionTwo {
-    max-height: 40vh;
+    height: calc(40vh - 4px);
+  }
+}
+
+@media screen and (width: 320px) and (height: 568px) {
+  .App-sectionTwo {
+    height: calc(40vh - 4px);
   }
 }
 
 .App-sectionTwo {
-  background-color: white;
-  height: 40vh;
+  background-color: rgb(255, 255, 255);
+  height: calc(40vh - 4px);
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -190,8 +212,10 @@
 }
 .sectionTwoBottomLogo {
   display: flex;
+  align-items: center;
   justify-content: space-around;
-  margin-top: 0.3125rem;
+  height: 10vh;
+
   div {
     text-align: center;
     @media screen and (max-width: 1280px) and (min-width: 768px) {
@@ -202,6 +226,11 @@
     @media screen and (max-width: 540px) and (min-width: 280px) {
       img {
         min-height: calc(0.5rem + 1vmin);
+      }
+    }
+    @media screen and (width: 320px) and (height: 568px) {
+      img {
+        min-height: calc(0.6rem);
       }
     }
     img {
