@@ -3,7 +3,6 @@ import "./Apropos.scss";
 
 // Packages
 import dateFormat from "dateformat";
-import { Fragment } from "react/cjs/react.development";
 
 // Components
 import SectionOneSousinfo from "../../Components/SectionOneSousInfo/SectionOneSousInfo";
@@ -32,7 +31,7 @@ const Apropos = () => {
   let age = Math.abs(year - 1970);
 
   return (
-    <Fragment>
+    <>
       <section className="App-sectionOne">
         <div className="sectionOneRight">
           <div className="sectionOneTitle">A propos de Moi</div>
@@ -117,7 +116,7 @@ const Apropos = () => {
       <div className="sectionTwoBottomLogo">
         <Logo />
       </div>
-    </Fragment>
+    </>
   );
 };
 
