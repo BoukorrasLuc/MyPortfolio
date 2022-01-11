@@ -22,7 +22,7 @@ const Contact = () => {
             <input type="text" name="subject" required={true} />
             <label>Message</label>
             <textarea name="message" required={true} />
-
+            <div className="none"></div>
             <div className="btn btn-one">
               <input
                 type="submit"

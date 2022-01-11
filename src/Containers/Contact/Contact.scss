@@ -12,7 +12,10 @@
     font-family: "poppins";
     text-decoration: underline;
     margin: 3.125rem 0;
+
+    transition: all 0.5s ease-in;
   }
+
   .section-content {
     display: flex;
     flex-direction: row;
@@ -60,6 +63,10 @@
           height: 9.375rem;
           width: 100%;
           resize: none;
+        }
+        .none {
+          height: 20px;
+          background: rgb(0, 0, 0);
         }
         .btn {
           margin-top: 0.625rem;
@@ -177,10 +184,8 @@
         }
       }
       .socialNetwork {
-        a {
-          text-decoration: none;
-          color: white;
-        }
+        background: rgb(0, 0, 0);
+        height: 20px;
       }
       .btn {
         line-height: 3.125rem;
@@ -248,6 +253,25 @@
         z-index: 5;
         text-decoration: none;
         color: white;
+      }
+    }
+  }
+}
+
+@media (min-width: 1025px) {
+  .App-Contact {
+    .section-content {
+      .sectionFourLeft {
+        height: 60vh;
+        .title {
+          font-size: 1.125rem;
+        }
+        .contact-form {
+          height: 28.125rem;
+        }
+      }
+      .sectionFourRight {
+        height: 60vh;
       }
     }
   }

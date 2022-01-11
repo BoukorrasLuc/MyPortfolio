@@ -143,6 +143,18 @@
 
   font-family: "poppins";
 
+  animation-name: ModaleTopToMiddle;
+  animation-duration: 1s;
+
+  @keyframes ModaleTopToMiddle {
+    from {
+      top: 0;
+    }
+    to {
+      top: 150;
+    }
+  }
+
   .showInfos {
     padding: 10px;
     .infosContent {
