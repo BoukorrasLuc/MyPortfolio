@@ -6,16 +6,10 @@ import dateFormat from "dateformat";
 
 // Components
 import SectionOneSousinfo from "../../Components/SectionOneSousInfo/SectionOneSousInfo";
-import ProgressBarLanguages from "../../Components/ProgressBar/ProgressBarLanguages";
-import ProgressBarFrameworks from "../../Components/ProgressBar/ProgressBarFrameworks";
 import Logo from "../../Components/Logo/Logo";
 
 // Images
 import Luc2 from "../../Asset/Image/DSC_3042R-reedit.jpg";
-
-// Data
-import { Frameworks } from "../../Data/Frameworks";
-import { Languages } from "../../Data/Languages";
 
 const Apropos = () => {
   const date = new Date("1987-09-19T01:20:00.000+00:00");
@@ -36,18 +30,17 @@ const Apropos = () => {
         <div className="sectionOneRight">
           <div className="sectionOneTitle">A propos de Moi</div>
           <div className="sectionOneLocalisation">
-            Développeur fullstack basé en France
+            Développeur React basé à Avignon.
           </div>
           <div className="sectionOneText">
-            Ayant toujours eu une attirance particulière pour les nouvelles
-            technologies et l'informatique, j'ai tout de suite su vers quel
-            domaine me tourner lorsqu'il a été question de reconversion
-            professionnelle. J'avais déjà abordé sommairement le développement
-            informatique pour des projets personnels, notamment liés aux jeux
-            vidéo. Cela m'a conforté dans l'idée de faire une formation
-            développeur web et mobile grâce à laquelle je me suis grandement
-            épanoui mais également acquis un grand nombre de compétences
-            supplémentaires.
+            Passionné de longue date par l'informatique et les nouvelles
+            technologies, j'ai décidé de me réorienter professionnellement dans
+            le développement web et mobile. J'ai débuté ce changement avec une
+            formation intensive auprès du Reacteur, puis d'un stage en
+            entreprise. Nouvellement admis à la Wild Code School, je recherche
+            actuellement un poste d'alternant au sein d'une entreprise qui
+            serait intéressée par mes compétences en React, JavaScript, Html/Css
+            et Node.Js .
           </div>
           <div className="sectionOneInfo">
             <SectionOneSousinfo
@@ -65,7 +58,7 @@ const Apropos = () => {
             <SectionOneSousinfo
               className="sectionOneSousInfo3"
               texte="Adresse"
-              texteTwo="Chateaurenard (13)"
+              texteTwo="Avignon (84)"
             />
 
             <SectionOneSousinfo
@@ -94,20 +87,6 @@ const Apropos = () => {
             "Chaque passion parle un différent langage".
           </span>
           <div className="sectionTwoLeftCitationName">Nicolas Boileau</div>
-        </div>
-        <div className="sectionTwoRight">
-          <div className="languagesFrameworks">
-            <ProgressBarLanguages
-              languages={Languages}
-              title="languages"
-              className="languages"
-            />
-            <ProgressBarFrameworks
-              frameworks={Frameworks}
-              title="Frameworks"
-              className="frameworks"
-            />
-          </div>
         </div>
       </section>
 

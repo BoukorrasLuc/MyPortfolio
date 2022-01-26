@@ -119,14 +119,62 @@
         margin-bottom: 5%;
       }
     }
+    @media (width: 912px) and (height: 1368px) {
+      .sectionOneText {
+        font-size: 1.3rem;
+      }
+      .sectionOneInfo {
+        .sectionOneSousInfo1,
+        .sectionOneSousInfo2,
+        .sectionOneSousInfo3,
+        .sectionOneSousInfo4,
+        .sectionOneSousInfo5 {
+          font-size: 0.9rem;
+        }
+      }
+    }
+    @media (width: 820px) and (height: 1180px) {
+      .sectionOneText {
+        font-size: 1.1rem;
+      }
+    }
+
     @media (width: 540px) and (height: 720px) {
       .sectionOneText {
         font-size: 0.68rem;
       }
     }
+    @media (width: 414px) and (height: 896px) {
+      .sectionOneText {
+        font-size: 0.74rem;
+      }
+      .sectionOneInfo {
+        .sectionOneSousInfo1,
+        .sectionOneSousInfo2,
+        .sectionOneSousInfo3,
+        .sectionOneSousInfo4,
+        .sectionOneSousInfo5 {
+          font-size: 0.5rem;
+        }
+      }
+    }
     @media (width: 414px) and (height: 736px) {
       .sectionOneText {
         font-size: 0.65rem;
+      }
+    }
+    @media (width: 412px) and (height: 914px) {
+      .sectionOneText {
+        font-size: 0.74rem;
+      }
+      .sectionOneInfo {
+        .sectionOneSousInfo1,
+        .sectionOneSousInfo2,
+        .sectionOneSousInfo3,
+        .sectionOneSousInfo4,
+        .sectionOneSousInfo5 {
+          font-size: 0.5rem;
+        }
       }
     }
     @media (width: 411px) and (height: 731px) {
@@ -139,14 +187,79 @@
         font-size: 0.69rem;
       }
     }
+    @media (width: 412px) and (height: 915px) {
+      .sectionOneText {
+        font-size: 0.74rem;
+      }
+      .sectionOneInfo {
+        .sectionOneSousInfo1,
+        .sectionOneSousInfo2,
+        .sectionOneSousInfo3,
+        .sectionOneSousInfo4,
+        .sectionOneSousInfo5 {
+          font-size: 0.5rem;
+        }
+      }
+    }
     @media (width: 375px) and (height: 667px) {
       .sectionOneText {
-        font-size: 0.575rem;
+        font-size: 0.58rem;
+      }
+      .sectionOneInfo {
+        .sectionOneSousInfo1,
+        .sectionOneSousInfo2,
+        .sectionOneSousInfo3,
+        .sectionOneSousInfo4,
+        .sectionOneSousInfo5 {
+          font-size: 0.5rem;
+        }
+      }
+    }
+    @media (width: 390px) and (height: 844px) {
+      .sectionOneText {
+        font-size: 0.7rem;
+      }
+      .sectionOneInfo {
+        .sectionOneSousInfo1,
+        .sectionOneSousInfo2,
+        .sectionOneSousInfo3,
+        .sectionOneSousInfo4,
+        .sectionOneSousInfo5 {
+          font-size: 0.5rem;
+        }
+      }
+    }
+    @media (width: 393px) and (height: 851px) {
+      .sectionOneText {
+        font-size: 0.7rem;
+      }
+      .sectionOneInfo {
+        .sectionOneSousInfo1,
+        .sectionOneSousInfo2,
+        .sectionOneSousInfo3,
+        .sectionOneSousInfo4,
+        .sectionOneSousInfo5 {
+          font-size: 0.5rem;
+        }
       }
     }
     @media (width: 375px) and (height: 812px) {
       .sectionOneText {
         font-size: 0.65rem;
+      }
+    }
+    @media (width: 360px) and (height: 740px) {
+      .sectionOneText {
+        font-size: 0.6rem;
+      }
+      .sectionOneInfo {
+        .sectionOneSousInfo1,
+        .sectionOneSousInfo2,
+        .sectionOneSousInfo3,
+        .sectionOneSousInfo4,
+        .sectionOneSousInfo5 {
+          font-size: 0.5rem;
+        }
       }
     }
     @media (width: 360px) and (height: 640px) {
@@ -191,7 +304,7 @@
   color: rgb(0, 0, 0);
 
   .sectionTwoLeft {
-    width: 40vw;
+    width: 50vw;
     .sectionTwoLeftCitation {
       min-width: 100%;
     }
@@ -199,14 +312,6 @@
       margin-left: 50%;
       margin-top: 2%;
       font-size: 70%;
-    }
-  }
-  .sectionTwoRight {
-    width: 40vw;
-    border: solid 3px #282c34;
-
-    .languagesFrameworks {
-      margin-bottom: 0.625rem;
     }
   }
 }
