@@ -4,6 +4,14 @@ import "./Contact.scss";
 // Function
 import sendEmail from "../../Function/sendEmail";
 
+// Icons
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faLinkedin,
+  faGithub,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
+
 const Contact = () => {
   return (
     <section className="App-Contact">
@@ -43,21 +51,21 @@ const Contact = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <i className="fab fa-linkedin fa-2x"></i>
+              <FontAwesomeIcon icon={faLinkedin} size="2x" />
             </a>
             <a
               href="https://github.com/BoukorrasLuc"
               target="_blank"
               rel="noreferrer"
             >
-              <i className="fab fa-github-square fa-2x"></i>
+              <FontAwesomeIcon icon={faGithub} size="2x" />
             </a>
             <a
               href="https://twitter.com/LucBoukorras"
               target="_blank"
               rel="noreferrer"
             >
-              <i className="fab fa-twitter-square fa-2x"></i>
+              <FontAwesomeIcon icon={faTwitter} size="2x" />
             </a>
           </div>
 
