@@ -9,7 +9,7 @@ import SectionOneSousinfo from "../../Components/SectionOneSousInfo/SectionOneSo
 import Logo from "../../Components/Logo/Logo";
 
 // Images
-import Luc2 from "../../Asset/Image/Boukorras Luc - Développeur React (2).jpg";
+import Luc2 from "../../Asset/Image/Boukorras Luc - Développeur React (1).jpg";
 
 const Apropos = () => {
   const date = new Date("1987-09-19T01:20:00.000+00:00");
