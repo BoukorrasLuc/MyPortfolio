@@ -28,11 +28,11 @@ const Apropos = () => {
     <>
       <section className="App-sectionOne">
         <div className="sectionOneRight">
-          <div className="sectionOneTitle">A propos de Moi</div>
-          <div className="sectionOneLocalisation">
+          <h1 className="sectionOneTitle">A propos de Moi</h1>
+          <h2 className="sectionOneLocalisation">
             Développeur React basé à Avignon.
-          </div>
-          <div className="sectionOneText">
+          </h2>
+          <p className="sectionOneText">
             Passionné de longue date par l'informatique et les nouvelles
             technologies, j'ai décidé de me réorienter professionnellement dans
             le développement web et mobile. J'ai débuté ce changement avec une
@@ -41,7 +41,7 @@ const Apropos = () => {
             actuellement un poste d'alternant au sein d'une entreprise qui
             serait intéressée par mes compétences en React, JavaScript, Html/Css
             et Node.Js .
-          </div>
+          </p>
           <div className="sectionOneInfo">
             <SectionOneSousinfo
               className="sectionOneSousInfo1"
@@ -75,7 +75,7 @@ const Apropos = () => {
           </div>
         </div>
         <div className="sectionOneLeft">
-          <img src={Luc2} alt="A propos de Boukorras Luc" />
+          <img src={Luc2} alt="Boukorras Luc Développeur React" />
         </div>
       </section>
 
@@ -83,10 +83,10 @@ const Apropos = () => {
 
       <section className="App-sectionTwo">
         <div className="sectionTwoLeft">
-          <span className="sectionTwoLeftCitation">
+          <p className="sectionTwoLeftCitation">
             "Chaque passion parle un différent langage".
-          </span>
-          <div className="sectionTwoLeftCitationName">Nicolas Boileau</div>
+          </p>
+          <p className="sectionTwoLeftCitationName">Nicolas Boileau</p>
         </div>
       </section>
 

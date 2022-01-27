@@ -15,11 +15,11 @@ import {
 const Contact = () => {
   return (
     <section className="App-Contact">
-      <div className="title">Travaillons ensemble ?</div>
+      <h1 className="title">Travaillons ensemble ?</h1>
 
       <div className="section-content">
         <section className="sectionFourLeft">
-          <div className="title">Écrivez-moi !</div>
+          <h2 className="title">Écrivez-moi !</h2>
 
           <form className="contact-form" onSubmit={sendEmail}>
             <label>Nom</label>
@@ -41,11 +41,11 @@ const Contact = () => {
           </form>
         </section>
         <section className="sectionFourRight">
-          <div>Email</div>
-          <div>l.boukorras@gmail.com</div>
-          <div>Téléphone</div>
-          <div>06&ensp;19&ensp;96&ensp;84&ensp;49</div>
-          <div className="socialNetwork">
+          <p>Email</p>
+          <p>l.boukorras@gmail.com</p>
+          <p>Téléphone</p>
+          <p>06&ensp;19&ensp;96&ensp;84&ensp;49</p>
+          <p className="socialNetwork">
             <a
               href="https://www.linkedin.com/in/luc-boukorras"
               target="_blank"
@@ -67,7 +67,7 @@ const Contact = () => {
             >
               <FontAwesomeIcon icon={faTwitter} size="2x" />
             </a>
-          </div>
+          </p>
 
           <div className="btn btn-one">
             <a href="./Media/BoukorrasLucCv.pdf" target="_blank" className="cv">

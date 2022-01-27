@@ -6,15 +6,15 @@ const Hero = ({ Luc }) => {
     <div className="hero">
       <div className="content">
         <span className="contentSpanOn">
-          <img src={Luc} alt="Boukorras Luc" />
+          <img src={Luc} alt="Boukorras Luc Développeur React" />
         </span>
 
         <span className="contentSpanTwo">
           <div className="contentEffectRound">
-            <span>
+            <h1>
               Bonjour,<br></br>
-              <br></br> <span>Je suis Luc BOUKORRAS.</span>
-            </span>
+              <br></br> <h1>Je suis Luc BOUKORRAS.</h1>
+            </h1>
             <p>
               Passionné de <br></br>&ensp;&ensp;nouvelles <br></br>
               &ensp;technologies et

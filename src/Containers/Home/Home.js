@@ -1,6 +1,3 @@
-// Scss
-import "./Home.scss";
-
 // Components
 import Hero from "../../Components/Hero/Hero";
 
