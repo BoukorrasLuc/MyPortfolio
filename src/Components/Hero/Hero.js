@@ -13,13 +13,9 @@ const Hero = ({ Luc }) => {
           <div className="contentEffectRound">
             <h1>
               Bonjour,<br></br>
-              <br></br> <h1>Je suis Luc BOUKORRAS.</h1>
+              <br></br> <span>Je suis Luc BOUKORRAS,</span>
             </h1>
-            <p>
-              Passionné de <br></br>&ensp;&ensp;nouvelles <br></br>
-              &ensp;technologies et
-              <br></br> &ensp;&ensp;d'informatique...
-            </p>
+            <p id="typing-text">&ensp;&ensp;</p>
           </div>
         </span>
       </div>

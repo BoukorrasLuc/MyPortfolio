@@ -21,6 +21,20 @@
     width: 40vw;
     margin-left: 5%;
 
+    position: relative;
+
+    animation: rightThenLeft 1s linear;
+
+    @keyframes rightThenLeft {
+      0% {
+        left: -50%;
+      }
+
+      100% {
+        left: 0%;
+      }
+    }
+
     .sectionOneTitle {
       font-size: calc(1rem + 1vmin);
       margin-bottom: 2%;
@@ -296,6 +310,7 @@
 .App-sectionTwo {
   background-color: rgb(255, 255, 255);
   height: calc(40vh - 0.3rem - 5vh);
+
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -303,8 +318,23 @@
   font-family: "poppins";
   color: rgb(0, 0, 0);
 
+  // position: relative;
+
+  // animation: leftThenRight 4s linear;
+
+  // @keyframes leftThenRight {
+  //   0% {
+  //     left: 50%;
+  //   }
+
+  //   100% {
+  //     left: 0%;
+  //   }
+  // }
+
   .sectionTwoLeft {
     width: 50vw;
+
     .sectionTwoLeftCitation {
       min-width: 100%;
     }

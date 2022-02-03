@@ -51,34 +51,23 @@
           color: black;
           margin-left: 1.87rem;
           margin-bottom: 1rem;
-          h1 {
+          span {
             font-size: calc(0.62rem + 2vmin);
           }
         }
         p {
           color: black;
-          position: relative;
-          left: 1%;
           font-size: calc(2vmin);
-          text-align: justify;
-          overflow: hidden; /* Ensures the content is not revealed until the animation */
           border-right: 0.15em solid #282c34; /* The typwriter cursor */
           white-space: nowrap; /* Keeps the content on a single line */
-          // margin: -80px auto; /* Gives that scrolling effect as the typing happens */
-          letter-spacing: 0.15em; /* Adjust as needed */
-          animation: typing 4s steps(10, end),
-            blink-caret 0.75s step-end infinite;
-
-          @keyframes typing {
-            from {
-              width: 0;
-            }
-            to {
-              width: 28%;
-            }
+          letter-spacing: 0.1em; /* Adjust as needed */
+          overflow: hidden; /* Ensures the content is not revealed until the animation */
+          animation: blink-caret 0.75s step-end infinite;
+          &:after {
+            content: "";
+            animation: write-text 10s infinite;
           }
 
-          /* The typewriter cursor effect */
           @keyframes blink-caret {
             from,
             to {
@@ -86,6 +75,90 @@
             }
             50% {
               border-color: #282c34;
+            }
+          }
+
+          @keyframes write-text {
+            0% {
+              content: "p";
+            }
+            4% {
+              content: "pa";
+            }
+            8% {
+              content: "pas";
+            }
+            12% {
+              content: "pass";
+            }
+            16% {
+              content: "passi";
+            }
+            18% {
+              content: "passio";
+            }
+            22% {
+              content: "passion";
+            }
+            26% {
+              content: "passionn";
+            }
+            30% {
+              content: "passionné";
+            }
+            34% {
+              content: "passionné,";
+            }
+            36% {
+              content: "passionné, ";
+            }
+            40% {
+              content: "passionné, c";
+            }
+            44% {
+              content: "passionné, cu";
+            }
+            46% {
+              content: "passionné, cur";
+            }
+            50% {
+              content: "passionné, curi";
+            }
+            54% {
+              content: "passionné, curie";
+            }
+            58% {
+              content: "passionné, curieu";
+            }
+            62% {
+              content: "passionné, curieux";
+            }
+            66% {
+              content: "passionné, curieux,";
+            }
+            70% {
+              content: "passionné, curieux, c";
+            }
+            74% {
+              content: "passionné, curieux, cr";
+            }
+            78% {
+              content: "passionné, curieux, cré";
+            }
+            82% {
+              content: "passionné, curieux, créa";
+            }
+            86% {
+              content: "passionné, curieux, créat";
+            }
+            90% {
+              content: "passionné, curieux, créati";
+            }
+            94% {
+              content: "passionné, curieux, créatif";
+            }
+            98% {
+              content: "passionné, curieux, créatif.";
             }
           }
         }
