@@ -30,17 +30,23 @@ const Apropos = () => {
         <div className="sectionOneRight">
           <h1 className="sectionOneTitle">A propos de Moi</h1>
           <h2 className="sectionOneLocalisation">
-            Développeur React basé à Avignon.
+            Développeur web et mobile full-stack basé à Avignon.
           </h2>
           <p className="sectionOneText">
-            Passionné de longue date par l'informatique et les nouvelles
+            {/* Passionné de longue date par l'informatique et les nouvelles
             technologies, j'ai décidé de me réorienter professionnellement dans
             le développement web et mobile. J'ai débuté ce changement avec une
             formation intensive auprès du Reacteur, puis d'un stage en
             entreprise. Nouvellement admis à la Wild Code School, je recherche
             actuellement un poste d'alternant au sein d'une entreprise qui
             serait intéressée par mes compétences en React, JavaScript, Html/Css
-            et Node.Js .
+            et Node.Js . */}
+            Passionné de longue date par l'informatique et les nouvelles
+            technologies, j'ai décidé de me réorienter professionnellement dans
+            le développement web et mobile. J'ai débuté ce changement avec une
+            formation intensive auprès du Reacteur, puis d'un stage en
+            entreprise. Nouvellement admis à la Wild Code School, je suis
+            actuellement en poste de développeur alternant à l'agence Glanum.
           </p>
           <div className="sectionOneInfo">
             <SectionOneSousinfo
